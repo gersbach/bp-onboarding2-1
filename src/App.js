@@ -1,22 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { AButton } from './ButtonComponent/Button'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="Background">
+        <AButton
+          text='LOG IN'
+          buttonType='button-clear'
+          textType='button-text-white'
+          onPress={() => console.log("I'm the first button.")}
+        />
+        <AButton
+          text='CONTINUE'
+          buttonType='button-green'
+          textType='button-text-white'
+          onPress={() => console.log("I'm the second.")}
+        />
+        <AButton
+          text='SKIP'
+          buttonType='button-white'
+          textType='button-text-grey'
+          onPress={() => console.log("Third.")}
+        />
+        <AButton
+          text='ONCE A DAY'
+          buttonType='button-clearAlt'
+          textType='button-text-green'
+          onPress={() => console.log("Hello! I'm the last button!")}
+        />
       </header>
     </div>
   );
