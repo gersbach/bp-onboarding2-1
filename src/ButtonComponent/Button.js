@@ -1,6 +1,6 @@
 import '../App.css';
 
-export const AButton = ({ buttonType, textType, onPress, text }) => {
+export const Button = ({ buttonType, textType, onPress, text }) => {
     return (
         <>
 
